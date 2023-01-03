@@ -119,7 +119,7 @@ body {
   font-size: 16px;
   transition: all 0.3s ease-in-out;
 }
-.lang__link-ua {
+.lang__link-id {
   color: var(--ijogelap);
 }
 .lang__link-en:hover {
