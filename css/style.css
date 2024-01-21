@@ -217,7 +217,9 @@ body {
   margin: 0 auto;
 }
 .skills__row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
   margin: 0 -15px;
 }
 .skills__column {
@@ -231,6 +233,12 @@ body {
   color: #ff525d;
 }
 .skills__column--two:hover h2 {
+  color: #34abe0;
+}
+.skills__column--three:hover h2 {
+  color: #34abe0;
+}
+.skills__column--four:hover h2 {
   color: #34abe0;
 }
 .skills__item {
@@ -267,10 +275,58 @@ body {
   flex: 1 1 auto;
 }
 
+/* PROJECT */
+.project {
+  padding: 70px 0 50px 0;
+}
+.project__title {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+  color: #070707;
+}
+.project__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: auto;
+}
+.project__item {
+  margin: 0 20px 40px;
+}
+.project__link {
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+.project__img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.123);
+  transition: all 0.3s ease-in-out;
+}
+.project__item .project__img:hover {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.103);
+  transform: scale(1.02);
+}
+.project__text,
+.project__text--four {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #070707;
+  margin-top: 20px;
+  position: relative;
+}
+
+
+
 /* ===================Work========================= */
 
 .hobby {
   padding: 70px 0 50px 0;
+  background-color: var(--ijoterang);;
 }
 .hobby__title {
   font-weight: 600;
@@ -316,7 +372,6 @@ body {
 /* =================About Me=========================== */
 .about {
   padding: 70px 0 50px 0;
-  background-color: var(--ijoterang);
 }
 
 .about__inner {
@@ -351,6 +406,7 @@ video {
 }
 .video {
   padding: 70px 0;
+  background-color: var(--ijoterang);
 }
 .video p {
   text-align: center;
@@ -359,17 +415,14 @@ video {
   line-height: 200%;
   color: #777;
 }
-
 .video__item {
   margin-bottom: 50px;
   text-align: center;
 }
-
 /* ===================Contact========================= */
 
 .contact {
   padding: 70px 0;
-  background-color: var(--ijoterang);
 }
 .contact__inner {
   text-align: center;
@@ -397,6 +450,10 @@ video {
   transform: translateY(-3px);
 }
 
+form{
+  background-color: var(--ijoterang);;
+  border-radius: 16px;
+}
 .contact-form {
   background-color: var(--ijosetengahterang);
   margin-bottom: 20px;
@@ -430,6 +487,7 @@ video {
   background: none;
   border-bottom: 2px solid var(--dark-grey);
 }
+
 .contact-form textarea {
   width: 400px;
   height: 100px;
